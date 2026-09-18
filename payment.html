@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect Rozgar — Payment Terms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --primary: #087DF5; --primary-dark: #0665C4; --primary-light: #EAF4FF;
+    --navy: #07336B; --text: #07336B; --text-secondary: #3C5A80; --text-muted: #7B93B0;
+    --background: #EAF4FF; --card: #FFFFFF; --border: #D6E8FB;
+    --warning: #F59E0B; --warning-light: #FEF3C7;
+    --gold: #F5A623;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--text); font-family: "Inter","Noto Sans Devanagari",system-ui,sans-serif; line-height: 1.65; }
+  body[data-lang="hi"] { font-family: "Noto Sans Devanagari","Inter",system-ui,sans-serif; line-height: 1.85; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 20px 72px; }
+
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0 18px; flex-wrap: wrap; position: sticky; top: 0; background: var(--background); z-index: 5; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark { width: 38px; height: 38px; border-radius: 10px; background: var(--primary); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .brand-name { font-weight: 800; font-size: 1.1rem; color: var(--navy); }
+  .langtoggle { display: flex; gap: 2px; background: #fff; border: 1.5px solid var(--border); border-radius: 999px; padding: 3px; }
+  .langtoggle button { border: none; background: none; padding: 6px 14px; border-radius: 999px; font-family: inherit; font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); cursor: pointer; }
+  .langtoggle button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+
+  nav.doclinks { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  nav.doclinks a { font-size: 0.85rem; font-weight: 700; padding: 8px 14px; border-radius: 999px; text-decoration: none; border: 1.5px solid var(--border); background: #fff; color: var(--text-secondary); }
+  nav.doclinks a[aria-current="page"] { background: var(--primary-light); border-color: var(--primary); color: var(--primary-dark); }
+
+  h1 { font-size: clamp(1.4rem, 5vw, 1.75rem); font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; color: var(--navy); }
+  .meta { font-size: 0.85rem; color: var(--text-muted); margin: 0 0 24px; line-height: 1.6; }
+  .meta b { color: var(--text-secondary); }
+
+  section.clause { padding-top: 22px; scroll-margin-top: 70px; }
+  section.clause + section.clause { border-top: 1px solid var(--border); }
+  h2 { font-size: 1.08rem; font-weight: 800; color: var(--navy); margin: 0 0 10px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--navy); }
+
+  .tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 380px; }
+  th { background: var(--primary-light); text-align: left; padding: 9px 12px; font-size: 0.78rem; color: var(--text-secondary); border-bottom: 1px solid var(--border); }
+  td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+  tr:last-child td { border-bottom: none; }
+
+  footer.page { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.8rem; }
+</style>
+</head>
+<body data-lang="en">
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand"><div class="brand-mark">CR</div><div class="brand-name">Connect Rozgar</div></div>
+    <div class="langtoggle" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true">English</button>
+      <button type="button" data-lang-btn="hi" aria-pressed="false">हिंदी</button>
+    </div>
+  </header>
+
+  <nav class="doclinks">
+    <a href="terms.html" data-en="Terms of Use" data-hi="उपयोग की शर्तें">Terms of Use</a>
+    <a href="privacy.html" data-en="Privacy Policy" data-hi="Privacy Policy">Privacy Policy</a>
+    <a href="payment.html" aria-current="page" data-en="Payment Terms" data-hi="भुगतान की शर्तें">Payment Terms</a>
+    <a href="cancellation.html" data-en="Cancellation Policy" data-hi="Cancellation नीति">Cancellation Policy</a>
+    <a href="disputes.html" data-en="Dispute Policy" data-hi="विवाद नीति">Dispute Policy</a>
+    <a href="delete-account.html" data-en="Delete Account" data-hi="Account Delete करें">Delete Account</a>
+  </nav>
+
+  <div data-pane="en">
+    <h1>Connect Rozgar — Payment Terms</h1>
+    <p class="meta"><b>Version:</b> 0.1-draft &nbsp;·&nbsp; <b>Last updated:</b> 22 August 2026</p>
+  </div>
+  <div data-pane="hi" hidden>
+    <h1>Connect Rozgar — भुगतान की शर्तें</h1>
+    <p class="meta"><b>Version:</b> 0.1-draft &nbsp;·&nbsp; <b>अंतिम बदलाव:</b> 22 अगस्त 2026</p>
+  </div>
+
+  <div data-pane="en">
+    <section class="clause" id="pt1"><h2>1. Who pays whom</h2>
+      <p>The <strong>employer</strong> pays the <strong>worker</strong> the amount they agreed.</p>
+      <p>Connect Rozgar charges a separate <strong>platform fee</strong> to each side for arranging the job. The platform fee is not part of the worker's wages.</p>
+    </section>
+    <section class="clause" id="pt2"><h2>2. The fees</h2>
+      <div class="tablewrap"><table><thead><tr><th></th><th>Rate</th><th>On a ₹1,000 job</th></tr></thead><tbody>
+        <tr><td>Worker platform fee</td><td>5% of the agreed amount</td><td>₹50</td></tr>
+        <tr><td>Employer platform fee</td><td>1% of the agreed amount</td><td>₹10</td></tr>
+      </tbody></table></div>
+      <p><strong>Worker receives:</strong> ₹950 &nbsp; <strong>Employer pays in total:</strong> ₹1,010 &nbsp; <strong>Connect Rozgar receives:</strong> ₹60</p>
+      <p>A <strong>minimum fee of ₹10</strong> applies per side, so very small jobs are not free to process.</p>
+      <p>Both rates are shown in the app before anyone commits, and are set by Connect Rozgar in platform settings. <strong>Changes never apply to a job already agreed.</strong></p>
+    </section>
+    <section class="clause" id="pt3"><h2>3. How amounts are calculated</h2>
+      <p>Fees are calculated <strong>on our servers</strong>, from the job's agreed amount. The app displays the breakdown but does not decide it. An amount sent from a phone is never trusted as the basis for a charge.</p>
+    </section>
+    <section class="clause" id="pt4"><h2>4. Payment states</h2>
+      <p>A job's money moves through clearly named stages, and none of them is set because a button was pressed:</p>
+      <div class="tablewrap"><table><thead><tr><th>Stage</th><th>Means</th></tr></thead><tbody>
+        <tr><td>QUOTED</td><td>A price has been proposed</td></tr>
+        <tr><td>AGREED</td><td>Both sides accepted the price</td></tr>
+        <tr><td>PAYMENT DUE</td><td>Work is done; payment is owed</td></tr>
+        <tr><td>PAYMENT CONFIRMED</td><td>Payment actually confirmed by the payment provider</td></tr>
+        <tr><td>PLATFORM FEE DUE</td><td>Our fee is owed</td></tr>
+        <tr><td>PLATFORM FEE SETTLED</td><td>Our fee has been received</td></tr>
+        <tr><td>REFUNDED</td><td>Money returned</td></tr>
+        <tr><td>DISPUTED</td><td>Under review</td></tr>
+      </tbody></table></div>
+      <p><strong>PAYMENT CONFIRMED is only ever set from a verified message from the payment provider</strong> — never from the app saying so.</p>
+    </section>
+    <section class="clause" id="pt5"><h2>5. Today: payment happens between you</h2>
+      <p>Until online payment is switched on, the employer pays the worker <strong>directly</strong> — cash or their own transfer. Connect Rozgar does not hold, transmit or guarantee that money, and cannot recover it for you if it is not paid.</p>
+      <p>Not being paid is still worth reporting: it affects an employer's standing on the platform.</p>
+    </section>
+    <section class="clause" id="pt6"><h2>6. Refunds</h2>
+      <p>Where online payment exists, a refund may be due if a worker does not attend, or if the job is cancelled in time under the <a href="cancellation.html">Cancellation Policy</a>.</p>
+      <p>Platform fees may be refunded where the job did not happen through no fault of the person who paid.</p>
+    </section>
+    <section class="clause" id="pt7"><h2>7. Taxes</h2>
+      <p>Each user is responsible for their own tax.</p>
+    </section>
+    <section class="clause" id="pt8"><h2>8. Failed payments and chargebacks</h2>
+      <p>If a payment fails, the job stays unpaid and both sides are told.</p>
+      <p>If a payment is reversed after work was done, we may recover the amount from the account that received it and may suspend the account pending review.</p>
+    </section>
+    <section class="clause" id="pt9"><h2>9. Fraud</h2>
+      <p>Faking a payment, faking completion to trigger one, or arranging a job on Connect Rozgar and moving it off-platform to avoid fees may result in removal.</p>
+    </section>
+  </div>
+
+  <div data-pane="hi" hidden>
+    <section class="clause" id="pt1"><h2>1. कौन किसे देता है</h2>
+      <p><strong>Employer</strong>, <strong>worker</strong> को वह रकम देता है जो दोनों ने तय की।</p>
+      <p>Connect Rozgar काम मिलाने के लिए दोनों पक्षों से अलग से <strong>platform fee</strong> लेता है। Platform fee worker की मज़दूरी का हिस्सा नहीं है।</p>
+    </section>
+    <section class="clause" id="pt2"><h2>2. Fee</h2>
+      <div class="tablewrap"><table><thead><tr><th></th><th>दर</th><th>₹1,000 के काम पर</th></tr></thead><tbody>
+        <tr><td>Worker platform fee</td><td>तय रकम का 5%</td><td>₹50</td></tr>
+        <tr><td>Employer platform fee</td><td>तय रकम का 1%</td><td>₹10</td></tr>
+      </tbody></table></div>
+      <p><strong>Worker को मिलता है:</strong> ₹950 &nbsp; <strong>Employer कुल देता है:</strong> ₹1,010 &nbsp; <strong>Connect Rozgar को मिलता है:</strong> ₹60</p>
+      <p>हर पक्ष पर <strong>कम से कम ₹10</strong> की fee लगती है, ताकि बहुत छोटे काम भी process करने लायक़ रहें।</p>
+      <p>दोनों दरें कुछ भी तय करने से पहले app में दिखाई जाती हैं। <strong>बदलाव पहले से तय हुए काम पर कभी लागू नहीं होता।</strong></p>
+    </section>
+    <section class="clause" id="pt3"><h2>3. रकम कैसे निकाली जाती है</h2>
+      <p>Fee <strong>हमारे server पर</strong> निकाली जाती है, काम की तय रकम से। App सिर्फ़ हिसाब दिखाता है, तय नहीं करता। फ़ोन से भेजी गई रकम पर कभी भरोसा नहीं किया जाता।</p>
+    </section>
+    <section class="clause" id="pt4"><h2>4. Payment की स्थितियाँ</h2>
+      <p>काम का पैसा साफ़-साफ़ नाम वाले चरणों से गुज़रता है, और इनमें से कोई भी सिर्फ़ button दबाने से तय नहीं होता:</p>
+      <div class="tablewrap"><table><thead><tr><th>चरण</th><th>मतलब</th></tr></thead><tbody>
+        <tr><td>QUOTED</td><td>क़ीमत का प्रस्ताव दिया गया</td></tr>
+        <tr><td>AGREED</td><td>दोनों ने क़ीमत मान ली</td></tr>
+        <tr><td>PAYMENT DUE</td><td>काम हो गया; पैसा बाक़ी है</td></tr>
+        <tr><td>PAYMENT CONFIRMED</td><td>Payment provider ने पुष्टि की</td></tr>
+        <tr><td>PLATFORM FEE DUE</td><td>हमारी fee बाक़ी है</td></tr>
+        <tr><td>PLATFORM FEE SETTLED</td><td>हमारी fee मिल गई</td></tr>
+        <tr><td>REFUNDED</td><td>पैसा वापस</td></tr>
+        <tr><td>DISPUTED</td><td>समीक्षा में</td></tr>
+      </tbody></table></div>
+      <p><strong>PAYMENT CONFIRMED सिर्फ़ payment provider के सत्यापित संदेश से लगता है</strong> — app के कहने से कभी नहीं।</p>
+    </section>
+    <section class="clause" id="pt5"><h2>5. अभी: payment आपस में होता है</h2>
+      <p>जब तक online payment चालू नहीं होता, employer worker को <strong>सीधे</strong> पैसे देता है — नक़द या अपने transfer से। Connect Rozgar वह पैसा न रखता है, न भेजता है, न उसकी गारंटी देता है, और न पैसा न मिलने पर उसे वापस दिला सकता है।</p>
+      <p>फिर भी पैसा न मिलने की शिकायत करें: इससे employer की platform पर साख प्रभावित होती है।</p>
+    </section>
+    <section class="clause" id="pt6"><h2>6. Refund</h2>
+      <p>जहाँ online payment होगा, वहाँ refund बन सकता है अगर worker न पहुँचे, या <a href="cancellation.html">Cancellation Policy</a> के तहत समय पर काम रद्द हो।</p>
+      <p>अगर काम पैसा देने वाले की ग़लती के बिना नहीं हुआ, तो platform fee वापस हो सकती है।</p>
+    </section>
+    <section class="clause" id="pt7"><h2>7. Tax</h2>
+      <p>अपने tax की ज़िम्मेदारी हर user की अपनी है।</p>
+    </section>
+    <section class="clause" id="pt8"><h2>8. Payment fail और chargeback</h2>
+      <p>Payment fail होने पर काम unpaid रहता है और दोनों को बताया जाता है।</p>
+      <p>अगर काम होने के बाद payment पलट दिया जाता है, तो हम वह रकम पाने वाले account से वसूल सकते हैं और समीक्षा तक account suspend कर सकते हैं।</p>
+    </section>
+    <section class="clause" id="pt9"><h2>9. धोखाधड़ी</h2>
+      <p>नक़ली payment दिखाना, payment पाने के लिए झूठा completion दिखाना, या Connect Rozgar पर काम तय करके fee से बचने के लिए उसे बाहर ले जाना — इनसे account हटाया जा सकता है।</p>
+    </section>
+  </div>
+
+  <footer class="page">Connect Rozgar</footer>
+</div>
+
+<script>
+  document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-lang-btn');
+      document.body.setAttribute('data-lang', lang);
+      document.querySelectorAll('[data-lang-btn]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      document.querySelectorAll('[data-pane]').forEach(function (el) { el.hidden = el.getAttribute('data-pane') !== lang; });
+      document.querySelectorAll('[data-en][data-hi]').forEach(function (el) { el.textContent = el.getAttribute('data-' + lang); });
+    });
+  });
+</script>
+</body>
+</html>

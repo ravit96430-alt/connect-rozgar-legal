@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect Rozgar — Terms of Use</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
+<style>
+  /* Colour tokens sourced directly from src/constants/Colors.ts — kept in
+     sync by hand, same convention as web/delete-account.html. */
+  :root {
+    --primary: #087DF5; --primary-dark: #0665C4; --primary-light: #EAF4FF;
+    --navy: #07336B; --text: #07336B; --text-secondary: #3C5A80; --text-muted: #7B93B0;
+    --background: #EAF4FF; --card: #FFFFFF; --border: #D6E8FB;
+    --warning: #F59E0B; --warning-light: #FEF3C7;
+    --gold: #F5A623;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--text); font-family: "Inter","Noto Sans Devanagari",system-ui,sans-serif; line-height: 1.65; }
+  body[data-lang="hi"] { font-family: "Noto Sans Devanagari","Inter",system-ui,sans-serif; line-height: 1.85; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 20px 72px; }
+
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0 18px; flex-wrap: wrap; position: sticky; top: 0; background: var(--background); z-index: 5; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark { width: 38px; height: 38px; border-radius: 10px; background: var(--primary); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .brand-name { font-weight: 800; font-size: 1.1rem; color: var(--navy); }
+  .langtoggle { display: flex; gap: 2px; background: #fff; border: 1.5px solid var(--border); border-radius: 999px; padding: 3px; }
+  .langtoggle button { border: none; background: none; padding: 6px 14px; border-radius: 999px; font-family: inherit; font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); cursor: pointer; }
+  .langtoggle button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+
+  nav.doclinks { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  nav.doclinks a { font-size: 0.85rem; font-weight: 700; padding: 8px 14px; border-radius: 999px; text-decoration: none; border: 1.5px solid var(--border); background: #fff; color: var(--text-secondary); }
+  nav.doclinks a[aria-current="page"] { background: var(--primary-light); border-color: var(--primary); color: var(--primary-dark); }
+
+  h1 { font-size: clamp(1.4rem, 5vw, 1.75rem); font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; color: var(--navy); }
+  .meta { font-size: 0.85rem; color: var(--text-muted); margin: 0 0 24px; line-height: 1.6; }
+  .meta b { color: var(--text-secondary); }
+
+  .doc-nav { background: #fff; border: 1.5px solid var(--border); border-radius: 14px; padding: 14px 16px; margin-bottom: 24px; }
+  .doc-nav summary { font-weight: 700; cursor: pointer; color: var(--navy); }
+  .doc-nav ol { margin: 10px 0 0; padding-left: 20px; columns: 2; column-gap: 20px; }
+  .doc-nav li { margin-bottom: 4px; font-size: 0.88rem; }
+  .doc-nav a { color: var(--primary-dark); text-decoration: none; }
+
+  section.clause { padding-top: 22px; scroll-margin-top: 70px; }
+  section.clause + section.clause { border-top: 1px solid var(--border); }
+  h2 { font-size: 1.08rem; font-weight: 800; color: var(--navy); margin: 0 0 10px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--navy); }
+
+  .callout { background: var(--warning-light); border-left: 4px solid var(--warning); border-radius: 0 10px 10px 0; padding: 12px 16px; margin: 0 0 12px; font-size: 0.92rem; }
+
+  footer.page { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.8rem; }
+</style>
+</head>
+<body data-lang="en">
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand"><div class="brand-mark">CR</div><div class="brand-name">Connect Rozgar</div></div>
+    <div class="langtoggle" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true">English</button>
+      <button type="button" data-lang-btn="hi" aria-pressed="false">हिंदी</button>
+    </div>
+  </header>
+
+  <nav class="doclinks">
+    <a href="terms.html" aria-current="page" data-en="Terms of Use" data-hi="उपयोग की शर्तें">Terms of Use</a>
+    <a href="privacy.html" data-en="Privacy Policy" data-hi="Privacy Policy">Privacy Policy</a>
+    <a href="payment.html" data-en="Payment Terms" data-hi="भुगतान की शर्तें">Payment Terms</a>
+    <a href="cancellation.html" data-en="Cancellation Policy" data-hi="Cancellation नीति">Cancellation Policy</a>
+    <a href="disputes.html" data-en="Dispute Policy" data-hi="विवाद नीति">Dispute Policy</a>
+    <a href="delete-account.html" data-en="Delete Account" data-hi="Account Delete करें">Delete Account</a>
+  </nav>
+
+  <div data-pane="en">
+    <h1>Connect Rozgar — Terms of Use</h1>
+    <p class="meta"><b>Version:</b> 0.2-draft &nbsp;·&nbsp; <b>Last updated:</b> 18 September 2026 &nbsp;·&nbsp; <b>Operator:</b> Ravishankar Tiwari (sole proprietor) &nbsp;·&nbsp; <b>Contact:</b> ravit96430@gmail.com</p>
+  </div>
+  <div data-pane="hi" hidden>
+    <h1>Connect Rozgar — उपयोग की शर्तें</h1>
+    <p class="meta"><b>Version:</b> 0.2-draft &nbsp;·&nbsp; <b>अंतिम बदलाव:</b> 18 सितंबर 2026 &nbsp;·&nbsp; <b>संचालक:</b> रविशंकर तिवारी (sole proprietor) &nbsp;·&nbsp; <b>संपर्क:</b> ravit96430@gmail.com</p>
+  </div>
+
+  <details class="doc-nav">
+    <summary data-en="Jump to a section" data-hi="किसी section पर जाएं">Jump to a section</summary>
+    <div data-pane="en">
+      <ol>
+        <li><a href="#t1">What Connect Rozgar is</a></li><li><a href="#t2">Who may use Connect Rozgar</a></li>
+        <li><a href="#t3">Your account</a></li><li><a href="#t4">Identity information</a></li>
+        <li><a href="#t5">Job listings</a></li><li><a href="#t6">If you are a worker</a></li>
+        <li><a href="#t7">If you are an employer</a></li><li><a href="#t8">Safety</a></li>
+        <li><a href="#t9">Communication and contact details</a></li><li><a href="#t10">Platform fees</a></li>
+        <li><a href="#t11">Cancellation and no-shows</a></li><li><a href="#t12">Ratings</a></li>
+        <li><a href="#t13">Suspension and removal</a></li><li><a href="#t14">Limitation of liability</a></li>
+        <li><a href="#t15">Your responsibility for the law</a></li><li><a href="#t16">Changes to these terms</a></li>
+        <li><a href="#t17">Governing law and disputes</a></li><li><a href="#t18">Grievances</a></li>
+      </ol>
+    </div>
+    <div data-pane="hi" hidden>
+      <ol>
+        <li><a href="#t1">Connect Rozgar क्या है</a></li><li><a href="#t2">कौन इस्तेमाल कर सकता है</a></li>
+        <li><a href="#t3">आपका account</a></li><li><a href="#t4">पहचान की जानकारी</a></li>
+        <li><a href="#t5">काम की listing</a></li><li><a href="#t6">अगर आप worker हैं</a></li>
+        <li><a href="#t7">अगर आप employer हैं</a></li><li><a href="#t8">सुरक्षा</a></li>
+        <li><a href="#t9">बातचीत और संपर्क</a></li><li><a href="#t10">Platform fee</a></li>
+        <li><a href="#t11">Cancellation</a></li><li><a href="#t12">Ratings</a></li>
+        <li><a href="#t13">Suspension</a></li><li><a href="#t14">ज़िम्मेदारी की सीमा</a></li>
+        <li><a href="#t15">क़ानून का पालन</a></li><li><a href="#t16">शर्तों में बदलाव</a></li>
+        <li><a href="#t17">लागू क़ानून</a></li><li><a href="#t18">शिकायत</a></li>
+      </ol>
+    </div>
+  </details>
+
+  <div data-pane="en">
+    <section class="clause" id="t1"><h2>1. What Connect Rozgar is</h2>
+      <p>Connect Rozgar is a technology platform that helps people who need short-term work done find people willing to do it, and helps workers find work nearby.</p>
+      <p><strong>Connect Rozgar is not an employer.</strong> We do not employ, supervise, direct, train or guarantee the workers who use the platform. When an employer and a worker agree to a job, that agreement is between the two of them. Connect Rozgar is not a party to it.</p>
+      <p>We do not guarantee that any job will be filled, that any worker will attend, that any work will be done to a particular standard, or that any employer will pay.</p>
+    </section>
+    <section class="clause" id="t2"><h2>2. Who may use Connect Rozgar</h2>
+      <p>You must be at least 18 years old to use Connect Rozgar as a worker or an employer.</p>
+      <p>You must give accurate information about yourself. Creating an account in someone else's name, or using details that are not yours, is not permitted.</p>
+      <p>One person, one account. Multiple accounts used to evade a suspension, inflate ratings, or avoid platform fees are grounds for removal.</p>
+    </section>
+    <section class="clause" id="t3"><h2>3. Your account</h2>
+      <p>You sign in with your mobile number. Keep access to that number secure — anyone who can receive your verification codes can reach your account.</p>
+      <p>Tell us promptly if you believe someone else has used your account.</p>
+    </section>
+    <section class="clause" id="t4"><h2>4. Identity information</h2>
+      <p>Connect Rozgar may ask you for identity details such as an Aadhaar or PAN number.</p>
+      <p><strong>What we actually do with it, stated plainly:</strong></p>
+      <ul>
+        <li>We check that the number is <strong>correctly formed</strong> — that it passes the mathematical checks a genuine number would pass.</li>
+        <li>We store <strong>only the last four characters</strong>, and the type of document.</li>
+        <li>We <strong>never store your full number</strong>, and we <strong>never store a photo</strong> of your document. If you use the scan feature, your card is read on your own phone and the image is discarded.</li>
+      </ul>
+      <p><strong>A "format checked" mark is not identity verification.</strong> It means the number looked genuine. It does <strong>not</strong> mean anyone has confirmed the document belongs to you, and it must not be treated as a guarantee of who someone is, or of their honesty, skills or conduct.</p>
+    </section>
+    <section class="clause" id="t5"><h2>5. Job listings</h2>
+      <p>An employer posting a job must describe the work honestly, including where it is, when it starts, roughly how long it will take, and what they intend to pay.</p>
+      <p>Do not post:</p>
+      <ul><li>work that is illegal, or that requires a licence the worker will not have</li><li>work that is unsafe without training or equipment you are not providing</li><li>anything sexual, exploitative, or involving a minor</li><li>fake listings, or listings intended to collect people's details</li><li>work that discriminates on caste, religion, sex, disability or region</li></ul>
+      <p>We may remove a listing, or ask an administrator to review it, where it appears to fall into any of these categories.</p>
+    </section>
+    <section class="clause" id="t6"><h2>6. If you are a worker</h2>
+      <p>You are an independent worker, not a Connect Rozgar employee. You choose which jobs to accept.</p>
+      <p>You agree to:</p>
+      <ul><li>describe your skills and experience honestly</li><li>turn up when you have accepted a job, or tell the employer as early as you can if you cannot</li><li>do the work you agreed to do</li><li>follow reasonable safety instructions at the work site</li><li>not ask an employer to move the job off Connect Rozgar to avoid platform fees</li></ul>
+    </section>
+    <section class="clause" id="t7"><h2>7. If you are an employer</h2>
+      <p>You agree to:</p>
+      <ul><li>describe the work honestly, including anything about it that is difficult or hazardous</li><li>pay the amount you agreed, when you agreed to pay it</li><li>provide a safe place to work, and any equipment you said you would provide</li><li>treat workers with respect</li><li>not ask a worker to move the job off Connect Rozgar to avoid platform fees</li></ul>
+    </section>
+    <section class="clause" id="t8"><h2>8. Safety</h2>
+      <p>Neither Connect Rozgar nor any check we perform can guarantee that another user is safe, honest or competent. Use ordinary care: meet in the open where you can, tell someone where you are going, and stop if something feels wrong.</p>
+      <p>If a job turns out to be different from how it was described, you may decline it. Tell us.</p>
+      <p><strong>In an emergency, contact the police (112) first. Then tell us.</strong></p>
+    </section>
+    <section class="clause" id="t9"><h2>9. Communication and contact details</h2>
+      <p><strong>Workers:</strong> your phone number is not shown in your profile and is never visible just from being browsed, messaged, or applied to. An employer can reveal it through an explicit "Reveal Phone &amp; Contact" action — but only once you have agreed to this feature (see the <a href="privacy.html#p3">Privacy Policy §3</a> for exactly what that agreement covers and how it's recorded), and only as a one-time, recorded event per employer, never repeated or re-charged for the same employer.</p>
+      <p><strong>Employers:</strong> a revealed number is for contacting that worker about <strong>work you have posted or are discussing with them</strong> — nothing else. You may not use it to send marketing or promotional messages, to contact the worker about unrelated matters, to harass or repeatedly contact them after they've asked you to stop, or to pass the number to anyone else. Misuse may result in suspension. We cannot make you forget a number you already have, but we can, and will, act on your account.</p>
+      <p>Repeatedly trying to move contact off the platform in order to avoid platform fees may be flagged for review.</p>
+    </section>
+    <section class="clause" id="t10"><h2>10. Platform fees</h2>
+      <p>Connect Rozgar charges a fee on jobs arranged through the platform. The current rates are shown in the app before you commit to anything, and are set out in the <a href="payment.html">Payment Terms</a>.</p>
+      <p>Fees can change. Changes apply to jobs agreed after the change, never retrospectively.</p>
+    </section>
+    <section class="clause" id="t11"><h2>11. Cancellation and no-shows</h2>
+      <p>See the <a href="cancellation.html">Cancellation Policy</a>. In summary: cancel as early as you can, and repeated late cancellations or failures to turn up will affect your standing on the platform.</p>
+    </section>
+    <section class="clause" id="t12"><h2>12. Ratings</h2>
+      <p>After a completed job, each side may rate the other once. Ratings must reflect your real experience.</p>
+      <p>Do not offer or accept anything in exchange for a rating, rate yourself through a second account, or use ratings to threaten someone. Ratings found to be manipulated may be removed.</p>
+    </section>
+    <section class="clause" id="t13"><h2>13. Suspension and removal</h2>
+      <p>We may suspend or remove an account that appears to be breaking these terms, including for fraud, unsafe conduct, harassment, fake listings, manipulated ratings, or repeated attempts to avoid platform fees.</p>
+      <p>Where it is reasonable to do so, we will tell you why and give you a way to respond. Where the risk to others is serious, we may act first.</p>
+    </section>
+    <section class="clause" id="t14"><h2>14. Limitation of liability</h2>
+      <p>Connect Rozgar provides a platform for people to find one another. We do not control what happens between them.</p>
+      <p>To the extent permitted by law, Connect Rozgar is not liable for: the conduct of any user; the quality, timing or safety of work performed; non-payment by an employer; loss or damage at a work site; or any dispute between users.</p>
+      <p>Nothing in these terms limits liability that cannot lawfully be limited, including liability for death or personal injury caused by our own negligence, or for fraud.</p>
+      <p>We do not guarantee the app will always be available or free of faults.</p>
+    </section>
+    <section class="clause" id="t15"><h2>15. Your responsibility for the law</h2>
+      <p>You are responsible for complying with the law that applies to you, including anything to do with tax, minimum wages, working hours, licensing, and the safety of a work site you control.</p>
+    </section>
+    <section class="clause" id="t16"><h2>16. Changes to these terms</h2>
+      <p>We may update these terms. If a change is significant, we will ask you to accept the new version in the app. We record which version you accepted and when.</p>
+    </section>
+    <section class="clause" id="t17"><h2>17. Governing law and disputes</h2>
+      <p>These terms are governed by the laws of India.</p>
+    </section>
+    <section class="clause" id="t18"><h2>18. Grievances</h2>
+      <p>If something has gone wrong, contact us at <strong>ravit96430@gmail.com</strong> and we will respond.</p>
+    </section>
+  </div>
+
+  <div data-pane="hi" hidden>
+    <section class="clause" id="t1"><h2>1. Connect Rozgar क्या है</h2>
+      <p>Connect Rozgar एक technology platform है जो छोटे-मोटे काम करवाने वालों और काम करने वालों को आपस में मिलाता है।</p>
+      <p><strong>Connect Rozgar employer नहीं है।</strong> हम workers को नौकरी पर नहीं रखते, उनकी देखरेख नहीं करते, उन्हें training नहीं देते, और उनके काम की गारंटी नहीं देते। जब employer और worker आपस में कोई काम तय करते हैं, वह समझौता उन दोनों के बीच होता है। Connect Rozgar उसका हिस्सा नहीं है।</p>
+      <p>हम इसकी गारंटी नहीं देते कि कोई काम भर जाएगा, कोई worker पहुँचेगा, काम किसी ख़ास स्तर का होगा, या कोई employer पैसे देगा।</p>
+    </section>
+    <section class="clause" id="t2"><h2>2. Connect Rozgar कौन इस्तेमाल कर सकता है</h2>
+      <p>Worker या employer के रूप में Connect Rozgar इस्तेमाल करने के लिए आपकी उम्र कम से कम 18 साल होनी चाहिए।</p>
+      <p>अपने बारे में सही जानकारी दें। किसी और के नाम से account बनाना, या ऐसी जानकारी देना जो आपकी नहीं है, मना है।</p>
+      <p>एक व्यक्ति, एक account. Suspension से बचने, ratings बढ़ाने, या platform fee से बचने के लिए बनाए गए कई accounts हटाए जा सकते हैं।</p>
+    </section>
+    <section class="clause" id="t3"><h2>3. आपका account</h2>
+      <p>आप अपने मोबाइल नंबर से login करते हैं। उस नंबर को सुरक्षित रखें — जो भी आपका verification code पा सकता है, वह आपके account तक पहुँच सकता है।</p>
+      <p>अगर आपको लगे कि किसी और ने आपका account इस्तेमाल किया है, तो तुरंत बताएं।</p>
+    </section>
+    <section class="clause" id="t4"><h2>4. पहचान की जानकारी (Identity)</h2>
+      <p>Connect Rozgar आपसे Aadhaar या PAN नंबर जैसी पहचान की जानकारी माँग सकता है।</p>
+      <p><strong>हम असल में इसका क्या करते हैं, साफ़ शब्दों में:</strong></p>
+      <ul>
+        <li>हम जाँचते हैं कि नंबर <strong>सही ढंग से बना है या नहीं</strong>।</li>
+        <li>हम <strong>सिर्फ़ आख़िरी चार अंक</strong> और दस्तावेज़ का प्रकार रखते हैं।</li>
+        <li>हम <strong>आपका पूरा नंबर कभी save नहीं करते</strong>, और दस्तावेज़ की <strong>photo कभी नहीं रखते</strong>।</li>
+      </ul>
+      <p><strong>"Format जाँचा गया" का मतलब पहचान की पुष्टि नहीं है।</strong> इसका मतलब यह <strong>नहीं</strong> कि दस्तावेज़ आपका ही है, इसे किसी की पहचान, ईमानदारी, हुनर या व्यवहार की गारंटी नहीं माना जाना चाहिए।</p>
+    </section>
+    <section class="clause" id="t5"><h2>5. काम की listing</h2>
+      <p>काम post करने वाले employer को काम के बारे में सही-सही बताना होगा — कहाँ है, कब शुरू होगा, लगभग कितनी देर चलेगा, और कितना देने का इरादा है।</p>
+      <p>ये post न करें:</p>
+      <ul><li>ग़ैर-क़ानूनी काम</li><li>बिना training/उपकरण के ख़तरनाक काम</li><li>यौन, शोषणकारी, या नाबालिग़ से जुड़ा काम</li><li>नक़ली listing</li><li>जाति, धर्म, लिंग, विकलांगता या क्षेत्र पर भेदभाव करने वाला काम</li></ul>
+    </section>
+    <section class="clause" id="t6"><h2>6. अगर आप worker हैं</h2>
+      <p>आप एक स्वतंत्र worker हैं, Connect Rozgar के कर्मचारी नहीं। कौन-सा काम लेना है, यह आप तय करते हैं।</p>
+      <ul><li>अपने हुनर और अनुभव के बारे में सही बताएंगे</li><li>जो काम स्वीकार किया है वहाँ पहुँचेंगे</li><li>जो काम तय हुआ, वह करेंगे</li><li>सुरक्षा के उचित निर्देश मानेंगे</li><li>platform fee से बचने के लिए काम बाहर नहीं ले जाएंगे</li></ul>
+    </section>
+    <section class="clause" id="t7"><h2>7. अगर आप employer हैं</h2>
+      <ul><li>काम के बारे में सही बताएंगे</li><li>जो रकम तय हुई, वह देंगे</li><li>काम की सुरक्षित जगह देंगे</li><li>workers के साथ सम्मान से पेश आएंगे</li><li>platform fee से बचने के लिए काम बाहर नहीं ले जाएंगे</li></ul>
+    </section>
+    <section class="clause" id="t8"><h2>8. सुरक्षा</h2>
+      <p>न Connect Rozgar और न हमारी कोई जाँच इसकी गारंटी दे सकती है कि दूसरा व्यक्ति सुरक्षित, ईमानदार या क़ाबिल है। सामान्य सावधानी रखें।</p>
+      <p><strong>आपात स्थिति में पहले पुलिस (112) को बुलाएं। उसके बाद हमें बताएं।</strong></p>
+    </section>
+    <section class="clause" id="t9"><h2>9. बातचीत और संपर्क की जानकारी</h2>
+      <p><strong>Workers:</strong> आपका मोबाइल नंबर आपकी profile में नहीं दिखता। कोई employer इसे "Reveal Phone &amp; Contact" action से देख सकता है — सिर्फ़ तभी जब आपने इस feature के लिए सहमति दी हो (<a href="privacy.html#p3">Privacy Policy section 3</a> देखें), और यह हर employer के लिए सिर्फ़ एक बार होने वाली घटना है।</p>
+      <p><strong>Employers:</strong> revealed number सिर्फ़ पोस्ट किए या discuss किए जा रहे काम के लिए है। marketing, harassment, या नंबर किसी और को देने के लिए नहीं। ग़लत इस्तेमाल पर account suspend हो सकता है।</p>
+    </section>
+    <section class="clause" id="t10"><h2>10. Platform fee</h2>
+      <p>Connect Rozgar platform के ज़रिए तय हुए कामों पर fee लेता है, जो <a href="payment.html">Payment Terms</a> में लिखी है। बदलाव सिर्फ़ बाद के कामों पर लागू होता है।</p>
+    </section>
+    <section class="clause" id="t11"><h2>11. Cancellation और no-show</h2>
+      <p>देखें <a href="cancellation.html">Cancellation Policy</a>. जल्दी cancel करें, बार-बार देर से cancel करना साख को प्रभावित करेगा।</p>
+    </section>
+    <section class="clause" id="t12"><h2>12. Ratings</h2>
+      <p>काम पूरा होने के बाद, दोनों पक्ष एक बार rate कर सकते हैं। जोड़-तोड़ से बनी ratings हटाई जा सकती हैं।</p>
+    </section>
+    <section class="clause" id="t13"><h2>13. Suspension और account हटाना</h2>
+      <p>इन शर्तों को तोड़ने वाला account suspend या हटाया जा सकता है। जहाँ उचित होगा, हम कारण बताएंगे।</p>
+    </section>
+    <section class="clause" id="t14"><h2>14. ज़िम्मेदारी की सीमा</h2>
+      <p>Connect Rozgar लोगों को आपस में मिलाने का platform देता है। हम ज़िम्मेदार नहीं हैं: किसी user का व्यवहार, काम की गुणवत्ता, employer का पैसे न देना, users के बीच विवाद।</p>
+    </section>
+    <section class="clause" id="t15"><h2>15. क़ानून का पालन आपकी ज़िम्मेदारी</h2>
+      <p>tax, न्यूनतम मज़दूरी, काम के घंटे, licensing और सुरक्षा का पालन आपकी ज़िम्मेदारी है।</p>
+    </section>
+    <section class="clause" id="t16"><h2>16. शर्तों में बदलाव</h2>
+      <p>बड़ा बदलाव होने पर हम app में नया version स्वीकार करने को कहेंगे।</p>
+    </section>
+    <section class="clause" id="t17"><h2>17. लागू क़ानून और विवाद</h2>
+      <p>ये शर्तें भारत के क़ानून के अधीन हैं।</p>
+    </section>
+    <section class="clause" id="t18"><h2>18. शिकायत</h2>
+      <p><strong>ravit96430@gmail.com</strong> पर संपर्क करें, हम जवाब देंगे।</p>
+    </section>
+  </div>
+
+  <footer class="page">Connect Rozgar</footer>
+</div>
+
+<script>
+  document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-lang-btn');
+      document.body.setAttribute('data-lang', lang);
+      document.querySelectorAll('[data-lang-btn]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      document.querySelectorAll('[data-pane]').forEach(function (el) { el.hidden = el.getAttribute('data-pane') !== lang; });
+      document.querySelectorAll('[data-en][data-hi]').forEach(function (el) { el.textContent = el.getAttribute('data-' + lang); });
+    });
+  });
+</script>
+</body>
+</html>

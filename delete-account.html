@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Connect Rozgar Account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
+<style>
+  /* Colour tokens sourced directly from src/constants/Colors.ts — the
+     app's own single source of truth for its brand palette. Kept in sync
+     by hand since this is a standalone static page with no build step
+     that could import the TS file directly. */
+  :root {
+    --primary: #087DF5;
+    --primary-dark: #0665C4;
+    --primary-light: #EAF4FF;
+    --navy: #07336B;
+    --text: #07336B;
+    --text-secondary: #3C5A80;
+    --text-muted: #7B93B0;
+    --background: #EAF4FF;
+    --card: #FFFFFF;
+    --border: #D6E8FB;
+    --error: #EF4444;
+    --error-light: #FEE2E2;
+    --success: #22C55E;
+    --success-light: #DCFCE7;
+    --gold: #F5A623;
+    --gold-dark: #C97F0A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: "Inter", "Noto Sans Devanagari", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  body[data-lang="hi"] { font-family: "Noto Sans Devanagari", "Inter", system-ui, sans-serif; line-height: 1.8; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 24px 20px 64px; }
+  header.top {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; padding: 8px 0 24px; flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark {
+    width: 40px; height: 40px; border-radius: 10px; background: var(--primary);
+    color: #fff; font-weight: 800; font-size: 18px; display: flex;
+    align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-name { font-weight: 800; font-size: 1.15rem; color: var(--navy); }
+  .langtoggle { display: flex; gap: 2px; background: #fff; border: 1.5px solid var(--border); border-radius: 999px; padding: 3px; }
+  .langtoggle button {
+    border: none; background: none; padding: 7px 16px; border-radius: 999px;
+    font-family: inherit; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); cursor: pointer;
+  }
+  .langtoggle button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+  .langtoggle button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+  nav.doclinks { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  nav.doclinks a { font-size: 0.85rem; font-weight: 700; padding: 8px 14px; border-radius: 999px; text-decoration: none; border: 1.5px solid var(--border); background: #fff; color: var(--text-secondary); }
+  nav.doclinks a[aria-current="page"] { background: var(--primary-light); border-color: var(--primary); color: var(--primary-dark); }
+
+  h1 { font-size: clamp(1.5rem, 5vw, 1.9rem); font-weight: 800; letter-spacing: -0.01em; margin: 0 0 6px; color: var(--navy); }
+  .sub { color: var(--text-secondary); margin: 0 0 28px; }
+
+  .card {
+    background: var(--card); border: 1.5px solid var(--border); border-radius: 18px;
+    padding: clamp(18px, 4vw, 28px); margin-bottom: 20px;
+  }
+  .card h2 { font-size: 1.05rem; font-weight: 800; margin: 0 0 10px; color: var(--navy); }
+  .card p { margin: 0 0 10px; color: var(--text-secondary); }
+  .card p:last-child { margin-bottom: 0; }
+  .card ul { margin: 0 0 10px; padding-left: 20px; color: var(--text-secondary); }
+  .card li { margin-bottom: 6px; }
+
+  .retained-note {
+    background: var(--primary-light); border-left: 4px solid var(--primary);
+    border-radius: 0 10px 10px 0; padding: 12px 16px; margin-top: 14px;
+  }
+  .retained-note p { color: var(--text); margin: 0; font-size: 0.92rem; }
+
+  .help { font-size: 0.9rem; color: var(--text-secondary); }
+  .help a { color: var(--primary-dark); font-weight: 700; text-decoration: none; }
+  .help a:hover { text-decoration: underline; }
+
+  footer { text-align: center; color: var(--text-muted); font-size: 0.8rem; margin-top: 32px; }
+</style>
+</head>
+<body data-lang="en">
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="brand-mark">CR</div>
+      <div class="brand-name">Connect Rozgar</div>
+    </div>
+    <div class="langtoggle" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true">English</button>
+      <button type="button" data-lang-btn="hi" aria-pressed="false">हिंदी</button>
+    </div>
+  </header>
+
+  <nav class="doclinks">
+    <a href="terms.html" data-en="Terms of Use" data-hi="उपयोग की शर्तें">Terms of Use</a>
+    <a href="privacy.html" data-en="Privacy Policy" data-hi="Privacy Policy">Privacy Policy</a>
+    <a href="payment.html" data-en="Payment Terms" data-hi="भुगतान की शर्तें">Payment Terms</a>
+    <a href="cancellation.html" data-en="Cancellation Policy" data-hi="Cancellation नीति">Cancellation Policy</a>
+    <a href="disputes.html" data-en="Dispute Policy" data-hi="विवाद नीति">Dispute Policy</a>
+    <a href="delete-account.html" aria-current="page" data-en="Delete Account" data-hi="Account Delete करें">Delete Account</a>
+  </nav>
+
+  <div data-pane="en">
+    <h1>Delete Your Connect Rozgar Account</h1>
+    <p class="sub">You don't need the app installed, or to be able to sign in, to request this.</p>
+  </div>
+  <div data-pane="hi" hidden>
+    <h1>अपना Connect Rozgar खाता हटाएँ</h1>
+    <p class="sub">इसके लिए आपको app install रखने या login कर पाने की ज़रूरत नहीं है।</p>
+  </div>
+
+  <div class="card">
+    <div data-pane="en">
+      <h2>What happens when you delete your account</h2>
+      <ul>
+        <li>Your profile, photos, location, posted jobs, applications, messages, and ratings are permanently removed.</li>
+        <li>This cannot be undone. Signing up again afterward starts a brand new account.</li>
+      </ul>
+      <div class="retained-note">
+        <p><strong>What's retained:</strong> payment and paid-contact-reveal records you were part of are kept, with your name and identity removed, for accounting and legal record-keeping — never your profile, photos, or personal details. Exactly how long these are kept, and whether a purely financial record with your identity removed still needs further handling under applicable law, are open questions we have not finished resolving and are not going to guess at here. Our privacy policy is the source of truth on retention once that's settled.</p>
+      </div>
+    </div>
+    <div data-pane="hi" hidden>
+      <h2>Account delete करने पर क्या होता है</h2>
+      <ul>
+        <li>आपकी profile, photos, location, posted jobs, applications, messages, और ratings हमेशा के लिए हटा दी जाती हैं।</li>
+        <li>इसे undo नहीं किया जा सकता। बाद में दोबारा sign up करने पर बिल्कुल नया account बनेगा।</li>
+      </ul>
+      <div class="retained-note">
+        <p><strong>क्या रखा जाता है:</strong> जिन payment और paid contact-reveal records में आप शामिल थे, वे accounting और legal record-keeping के लिए रखे जाते हैं — आपका नाम और पहचान हटाकर। कभी भी आपकी profile, photos, या personal details नहीं। इन्हें ठीक कितने समय तक रखा जाएगा, और क्या पहचान हटाया हुआ सिर्फ़ financial record भी लागू क़ानून के तहत आगे कुछ और माँगता है — ये सवाल अभी खुले हैं, हमने अभी तय नहीं किए और यहाँ अंदाज़ा नहीं लगाएंगे। तय होने के बाद हमारी privacy policy ही retention पर सही जानकारी का स्रोत होगी।</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div data-pane="en">
+      <h2>Web deletion requests aren't available yet</h2>
+      <p>This page will offer a request form once it is connected to a live, verified production service. It is not connected to anything yet — there is no submission path on this page at all.</p>
+      <p><strong>To delete your account right now, use the app:</strong> open Connect Rozgar → Profile → Delete Account. It works immediately, without needing to fill in anything here.</p>
+      <p>If you can't sign in to the app, email <a href="mailto:ravit96430@gmail.com">ravit96430@gmail.com</a> instead — see below.</p>
+    </div>
+    <div data-pane="hi" hidden>
+      <h2>Web से deletion request अभी उपलब्ध नहीं है</h2>
+      <p>यह page एक live, verified production service से जुड़ने के बाद request form दिखाएगा। अभी यह किसी सेवा से जुड़ा नहीं है — इस page पर submit करने का कोई रास्ता ही नहीं है।</p>
+      <p><strong>अभी अपना account delete करने के लिए app इस्तेमाल करें:</strong> Connect Rozgar खोलें → Profile → Delete Account. यह तुरंत काम करता है, यहाँ कुछ भरने की ज़रूरत नहीं।</p>
+      <p>अगर आप app में sign in नहीं कर पा रहे, तो <a href="mailto:ravit96430@gmail.com">ravit96430@gmail.com</a> पर email करें — नीचे देखें।</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div data-pane="en">
+      <h2>Need help another way?</h2>
+      <p class="help">Email <a href="mailto:ravit96430@gmail.com">ravit96430@gmail.com</a> and we'll help directly.</p>
+    </div>
+    <div data-pane="hi" hidden>
+      <h2>किसी और तरीक़े से मदद चाहिए?</h2>
+      <p class="help"><a href="mailto:ravit96430@gmail.com">ravit96430@gmail.com</a> पर email करें, हम सीधे मदद करेंगे।</p>
+    </div>
+  </div>
+
+  <footer>Connect Rozgar</footer>
+</div>
+
+<script>
+  // ── Language toggle ──────────────────────────────────────────────────────
+  // This is the ONLY script on this public-package page. There is no
+  // backend config, no Supabase URL or key (TEST or production), and no
+  // form or submit handler of any kind — intentionally, per CR-WEB-045.
+  // This page cannot submit a deletion request under any URL parameter,
+  // browser setting, or client flag, because the code path to do so does
+  // not exist here. It will be added back only once a real, verified
+  // production endpoint exists (see web/delete-account.html in the main
+  // app repo for the internally-testable version with that gate).
+  document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-lang-btn');
+      document.body.setAttribute('data-lang', lang);
+      document.querySelectorAll('[data-lang-btn]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      document.querySelectorAll('[data-pane]').forEach(function (el) {
+        el.hidden = el.getAttribute('data-pane') !== lang;
+      });
+      document.querySelectorAll('[data-en][data-hi]').forEach(function (el) {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    });
+  });
+</script>
+</body>
+</html>

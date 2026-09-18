@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect Rozgar — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --primary: #087DF5; --primary-dark: #0665C4; --primary-light: #EAF4FF;
+    --navy: #07336B; --text: #07336B; --text-secondary: #3C5A80; --text-muted: #7B93B0;
+    --background: #EAF4FF; --card: #FFFFFF; --border: #D6E8FB;
+    --warning: #F59E0B; --warning-light: #FEF3C7;
+    --gold: #F5A623;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--text); font-family: "Inter","Noto Sans Devanagari",system-ui,sans-serif; line-height: 1.65; }
+  body[data-lang="hi"] { font-family: "Noto Sans Devanagari","Inter",system-ui,sans-serif; line-height: 1.85; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 20px 72px; }
+
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0 18px; flex-wrap: wrap; position: sticky; top: 0; background: var(--background); z-index: 5; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark { width: 38px; height: 38px; border-radius: 10px; background: var(--primary); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .brand-name { font-weight: 800; font-size: 1.1rem; color: var(--navy); }
+  .langtoggle { display: flex; gap: 2px; background: #fff; border: 1.5px solid var(--border); border-radius: 999px; padding: 3px; }
+  .langtoggle button { border: none; background: none; padding: 6px 14px; border-radius: 999px; font-family: inherit; font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); cursor: pointer; }
+  .langtoggle button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+
+  nav.doclinks { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  nav.doclinks a { font-size: 0.85rem; font-weight: 700; padding: 8px 14px; border-radius: 999px; text-decoration: none; border: 1.5px solid var(--border); background: #fff; color: var(--text-secondary); }
+  nav.doclinks a[aria-current="page"] { background: var(--primary-light); border-color: var(--primary); color: var(--primary-dark); }
+
+  h1 { font-size: clamp(1.4rem, 5vw, 1.75rem); font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; color: var(--navy); }
+  .meta { font-size: 0.85rem; color: var(--text-muted); margin: 0 0 24px; line-height: 1.6; }
+  .meta b { color: var(--text-secondary); }
+
+  .short { background: #fff; border: 1.5px solid var(--border); border-radius: 14px; padding: 16px 18px; margin-bottom: 24px; }
+  .short h2 { margin-top: 0; }
+  .short ul { margin: 0; padding-left: 20px; }
+  .short li { margin-bottom: 8px; }
+
+  section.clause { padding-top: 22px; scroll-margin-top: 70px; }
+  section.clause + section.clause { border-top: 1px solid var(--border); }
+  h2 { font-size: 1.08rem; font-weight: 800; color: var(--navy); margin: 0 0 10px; }
+  h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin: 16px 0 6px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--navy); }
+
+  .callout { background: var(--warning-light); border-left: 4px solid var(--warning); border-radius: 0 10px 10px 0; padding: 12px 16px; margin: 0 0 12px; font-size: 0.92rem; }
+  .action { background: var(--primary-light); border-left: 4px solid var(--primary); border-radius: 0 10px 10px 0; padding: 12px 16px; margin: 0 0 12px; font-size: 0.92rem; }
+
+  .tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 480px; }
+  th { background: var(--primary-light); text-align: left; padding: 8px 12px; font-weight: 700; color: var(--navy); border-bottom: 1px solid var(--border); }
+  td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+
+  footer.page { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.8rem; }
+</style>
+</head>
+<body data-lang="en">
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand"><div class="brand-mark">CR</div><div class="brand-name">Connect Rozgar</div></div>
+    <div class="langtoggle" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true">English</button>
+      <button type="button" data-lang-btn="hi" aria-pressed="false">हिंदी</button>
+    </div>
+  </header>
+
+  <nav class="doclinks">
+    <a href="terms.html" data-en="Terms of Use" data-hi="उपयोग की शर्तें">Terms of Use</a>
+    <a href="privacy.html" aria-current="page" data-en="Privacy Policy" data-hi="Privacy Policy">Privacy Policy</a>
+    <a href="payment.html" data-en="Payment Terms" data-hi="भुगतान की शर्तें">Payment Terms</a>
+    <a href="cancellation.html" data-en="Cancellation Policy" data-hi="Cancellation नीति">Cancellation Policy</a>
+    <a href="disputes.html" data-en="Dispute Policy" data-hi="विवाद नीति">Dispute Policy</a>
+    <a href="delete-account.html" data-en="Delete Account" data-hi="Account Delete करें">Delete Account</a>
+  </nav>
+
+  <div data-pane="en">
+    <h1>Connect Rozgar — Privacy Policy</h1>
+    <p class="meta"><b>Version:</b> 0.2-draft &nbsp;·&nbsp; <b>Last updated:</b> 18 September 2026 &nbsp;·&nbsp; <b>Contact:</b> ravit96430@gmail.com</p>
+  </div>
+  <div data-pane="hi" hidden>
+    <h1>Connect Rozgar — Privacy Policy (निजता नीति)</h1>
+    <p class="meta"><b>Version:</b> 0.2-draft &nbsp;·&nbsp; <b>अंतिम बदलाव:</b> 18 सितंबर 2026 &nbsp;·&nbsp; <b>संपर्क:</b> ravit96430@gmail.com</p>
+  </div>
+
+  <div class="short" data-pane="en">
+    <h2>The short version</h2>
+    <ul>
+      <li>We keep your name, gender, area, photo and work history so the platform works.</li>
+      <li><strong>Workers:</strong> an employer can reveal your phone number to call you about work, once you've agreed to this (see §3). It never appears anywhere else in the app, and we tell you when it happens.</li>
+      <li>If you scan an Aadhaar card, <strong>the photo never leaves your phone</strong>, and we store <strong>only the last four digits</strong> of the number.</li>
+      <li>We use your location to measure a rough distance band to jobs, never your exact position.</li>
+      <li>We do not sell your data.</li>
+      <li>You can delete your account any time, in the app — see §5/§6.</li>
+    </ul>
+  </div>
+  <div class="short" data-pane="hi" hidden>
+    <h2>छोटे में</h2>
+    <ul>
+      <li>App चलाने के लिए हम आपका नाम, लिंग, इलाक़ा, photo और काम का इतिहास रखते हैं।</li>
+      <li><strong>Workers:</strong> एक employer आपको काम के बारे में call करने के लिए आपका मोबाइल नंबर देख सकता है — सिर्फ़ तभी जब आपने सहमति दी हो (section 3 देखें)।</li>
+      <li>Aadhaar कार्ड scan करने पर photo आपके फ़ोन से बाहर नहीं जाती, और हम सिर्फ़ आख़िरी चार अंक रखते हैं।</li>
+      <li>आपकी location सिर्फ़ काम की एक मोटी दूरी (band) बताने के लिए इस्तेमाल होती है।</li>
+      <li>हम आपका डेटा बेचते नहीं हैं।</li>
+      <li>आप कभी भी, app में, अपना account delete कर सकते हैं — section 5/6 देखें।</li>
+    </ul>
+  </div>
+
+  <div data-pane="en">
+    <section class="clause" id="p1"><h2>1. What we collect, and why</h2>
+      <h3>You give us</h3>
+      <div class="tablewrap"><table><thead><tr><th>What</th><th>Why</th><th>Who else sees it</th></tr></thead><tbody>
+        <tr><td>Mobile number</td><td>It is how you sign in</td><td><strong>If you're a worker:</strong> an employer can reveal it, once you've agreed to this (§3) — never shown automatically, never in your profile itself. <strong>If you're an employer:</strong> nobody.</td></tr>
+        <tr><td>Name</td><td>So the other side knows who they are dealing with</td><td>Other signed-in users</td></tr>
+        <tr><td>Gender</td><td>Some jobs genuinely require it</td><td>Other signed-in users</td></tr>
+        <tr><td>Area / address</td><td>To match you with nearby work</td><td>Other signed-in users</td></tr>
+        <tr><td>Photo</td><td>So people can recognise you</td><td>Other signed-in users</td></tr>
+        <tr><td>Skills, experience, expected pay</td><td>Job matching</td><td>Other signed-in users</td></tr>
+        <tr><td>Parent/spouse name (optional)</td><td>Names repeat in India; helps tell people apart</td><td>Other signed-in users</td></tr>
+        <tr><td>Last 4 digits of Aadhaar/PAN</td><td>A basic trust signal</td><td>You, and admins reviewing verification</td></tr>
+      </tbody></table></div>
+      <h3>Created as you use Connect Rozgar</h3>
+      <p>Jobs you post or apply to, ratings given and received, completed and cancelled job counts, and messages about a job.</p>
+      <h3>Your device</h3>
+      <div class="tablewrap"><table><thead><tr><th>What</th><th>Why</th><th>Notes</th></tr></thead><tbody>
+        <tr><td>Location</td><td>To show distance to jobs</td><td>Only while the app is open. We never ask for background location.</td></tr>
+        <tr><td>Camera</td><td>Profile photo, job photos, ID scan</td><td>Only when you tap the button</td></tr>
+        <tr><td>Microphone</td><td>Speaking instead of typing</td><td>Only while you are recording</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="clause" id="p2"><h2>2. What we deliberately do NOT collect</h2>
+      <p><strong>Your full Aadhaar or PAN number.</strong> The number is used to check its format and then discarded. Only the last four characters are saved. Not in our database, logs, or backups.</p>
+      <p><strong>Photographs of your Aadhaar card.</strong> Read on your own phone; never uploaded to us.</p>
+      <p><strong>Your phone number, placed in your profile.</strong> It lives in the sign-in system, not in profile records other users browse or search — an employer cannot see it by looking at your profile. The one exception is the "reveal contact" feature described in §3, which requires your own agreement first and creates a record every time it's used.</p>
+      <p><strong>Your location in the background.</strong> Only while you're using the app.</p>
+    </section>
+
+    <section class="clause" id="p3"><h2>3. Who your data is shared with</h2>
+      <p><strong>Other users</strong> — your name, photo, area, skills, rating and job history. Never your full address if you have not made it your area, never your ID number.</p>
+      <p><strong>Your phone number, specifically — workers only.</strong> An employer can reveal it, one time, through an explicit "Reveal Phone &amp; Contact" action on your profile — never automatically, never just by browsing or messaging you. Before this can happen at all, you must have agreed to it: when you first join, or the first time this feature is shown to you, we ask you to explicitly accept a summary that names this exact feature — a plain checkbox, unticked by default, with "I agree" required before you can continue. If you haven't agreed, no employer can reveal your number — you'll be asked next time you sign in. Once revealed:</p>
+      <ul>
+        <li>You are told, every time — a notification naming that an employer revealed your contact.</li>
+        <li>It is currently free, and any future fee would be shown in the app before it applies.</li>
+        <li>We keep a record of the reveal itself (who, when, which job if any) — not a transcript of any call.</li>
+        <li><strong>The same employer cannot re-reveal or be charged twice</strong> — a one-time, recorded event.</li>
+        <li><strong>We cannot make an employer forget a number they already have.</strong> Deleting your account or turning off availability stops future reveals — it cannot erase a number from a phone someone already called. See §6 for reporting misuse.</li>
+      </ul>
+      <p><strong>Supabase</strong> — the company that hosts our database, on our behalf and under our instructions.</p>
+      <p><strong>Nobody else.</strong> We do not sell your data. We do not share it with advertisers.</p>
+      <p>We may disclose information if the law requires it, or where it is genuinely necessary to prevent serious harm.</p>
+    </section>
+
+    <section class="clause" id="p4"><h2>4. Location, specifically</h2>
+      <ul>
+        <li><strong>Before you accept a job</strong>, an employer sees only a rough <em>distance band</em> — "Under 2 km away", "2–5 km away", "5–10 km away", or "10+ km away" — never an exact figure and never your position. We show a band rather than a precise number because even a precise "2.3 km away" would let someone narrow down roughly where you are by asking from a few different points — a real technique, which is why bands replaced exact distances everywhere in the app.</li>
+        <li>A <strong>job's</strong> location is shown to workers, because they have to travel there. An <strong>employer's home address</strong> is not shared unless they choose it as the work location.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="p5"><h2>5. How long we keep it</h2>
+      <p>While your account exists, and for a reasonable period afterwards for records of completed jobs, disputes, and legal obligations.</p>
+      <div class="action"><strong>Delete your account any time from Profile → Delete Account, in the app.</strong> This permanently removes your profile, photos, location, posted jobs, applications, messages, and ratings — immediately, without needing to email anyone. It cannot be undone.</div>
+      <p><strong>What's kept anyway:</strong> payment and paid-contact-reveal records you were part of are kept, with your name and identity removed, for accounting and legal record-keeping.</p>
+      <div class="callout">Exactly how long these are kept, and whether a purely financial record with your identity removed still needs further handling under applicable law, are open questions we have not finished resolving — we are not going to guess at an answer here.</div>
+      <p>If you cannot sign in to use the in-app option, email us at <strong>ravit96430@gmail.com</strong>.</p>
+    </section>
+
+    <section class="clause" id="p6"><h2>6. Your choices</h2>
+      <ul>
+        <li><strong>See your data</strong> — most of it is on your profile screen.</li>
+        <li><strong>Correct it</strong> — every profile field can be edited in the app.</li>
+        <li><strong>Delete your account</strong> — Profile → Delete Account, in the app, any time (see §5). If you can't sign in, email us instead.</li>
+        <li><strong>Turn off permissions</strong> — location, camera and microphone can all be switched off in your phone's settings.</li>
+        <li><strong>Report misuse of your revealed number</strong> — if an employer uses it for anything other than the work you discussed, tell us at <strong>ravit96430@gmail.com</strong>. We can act on the employer's account even though we cannot recall the number itself.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="p7"><h2>7. Security</h2>
+      <p>Access is controlled at the database level, not just in the app: the database itself refuses to hand over data the requester is not entitled to, even if the app were modified. Admin accounts require a password and a second factor. Administrative actions are logged.</p>
+      <p>No system is perfectly secure, and we will not pretend otherwise. If a breach affects you, we will tell you.</p>
+    </section>
+
+    <section class="clause" id="p8"><h2>8. Children</h2>
+      <p>Connect Rozgar is for adults. It is not intended for anyone under 18, and we do not knowingly keep data about children. Tell us if you believe we have.</p>
+    </section>
+
+    <section class="clause" id="p9"><h2>9. Changes</h2>
+      <p>If we change this policy in a way that matters, we will ask you to read and accept the new version in the app, and we record which version you accepted.</p>
+    </section>
+
+    <section class="clause" id="p10"><h2>10. Contact</h2>
+      <p><strong>ravit96430@gmail.com</strong></p>
+    </section>
+  </div>
+
+  <div data-pane="hi" hidden>
+    <section class="clause" id="p1"><h2>1. हम क्या इकट्ठा करते हैं, और क्यों</h2>
+      <h3>जो आप देते हैं</h3>
+      <div class="tablewrap"><table><thead><tr><th>क्या</th><th>क्यों</th><th>और कौन देखता है</th></tr></thead><tbody>
+        <tr><td>मोबाइल नंबर</td><td>इसी से आप login करते हैं</td><td><strong>अगर worker हैं:</strong> employer सहमति के बाद देख सकता है (section 3)। <strong>अगर employer हैं:</strong> कोई नहीं।</td></tr>
+        <tr><td>नाम</td><td>पहचान के लिए</td><td>दूसरे signed-in users</td></tr>
+        <tr><td>लिंग</td><td>कुछ कामों में ज़रूरी</td><td>दूसरे signed-in users</td></tr>
+        <tr><td>इलाक़ा / पता</td><td>पास का काम मिलाने के लिए</td><td>दूसरे signed-in users</td></tr>
+        <tr><td>Photo</td><td>पहचान के लिए</td><td>दूसरे signed-in users</td></tr>
+        <tr><td>हुनर, अनुभव, मज़दूरी</td><td>काम मिलाने के लिए</td><td>दूसरे signed-in users</td></tr>
+        <tr><td>ID के आख़िरी 4 अंक</td><td>भरोसे का संकेत</td><td>आप, और verification admin</td></tr>
+      </tbody></table></div>
+      <h3>Connect Rozgar इस्तेमाल करने से बनने वाला डेटा</h3>
+      <p>Post/apply किए काम, दी-मिली ratings, काम की गिनती, और संदेश।</p>
+      <h3>आपके फ़ोन से</h3>
+      <div class="tablewrap"><table><thead><tr><th>क्या</th><th>क्यों</th><th>ध्यान दें</th></tr></thead><tbody>
+        <tr><td>Location</td><td>दूरी दिखाने के लिए</td><td>सिर्फ़ जब app खुला हो</td></tr>
+        <tr><td>Camera</td><td>Photo, ID scan</td><td>सिर्फ़ button दबाने पर</td></tr>
+        <tr><td>Microphone</td><td>बोलने के लिए</td><td>सिर्फ़ record करते समय</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="clause" id="p2"><h2>2. हम जानबूझकर क्या नहीं रखते</h2>
+      <p><strong>पूरा Aadhaar/PAN नंबर</strong> — format जाँचकर हटा दिया जाता है। सिर्फ़ आख़िरी 4 अंक save होते हैं।</p>
+      <p><strong>Aadhaar कार्ड की photo</strong> — आपके फ़ोन पर पढ़ी जाती है, हमारे पास कभी नहीं आती।</p>
+      <p><strong>आपका मोबाइल नंबर, profile में</strong> — login system में रहता है, profile records में नहीं। section 3 का "reveal contact" feature ही एकमात्र अपवाद है।</p>
+      <p><strong>Background location</strong> — सिर्फ़ app इस्तेमाल करते समय।</p>
+    </section>
+
+    <section class="clause" id="p3"><h2>3. आपका डेटा किसके साथ साझा होता है</h2>
+      <p><strong>दूसरे users</strong> — नाम, photo, इलाक़ा, हुनर, rating, काम का इतिहास। पूरा पता या ID नंबर कभी नहीं।</p>
+      <p><strong>आपका मोबाइल नंबर — सिर्फ़ workers के लिए।</strong> Employer इसे एक साफ़ "Reveal Phone &amp; Contact" action से देख सकता है — अपने-आप कभी नहीं। पहले सहमति ज़रूरी है — plain checkbox, पहले से tick नहीं। अगर सहमति नहीं दी, कोई employer नंबर नहीं देख सकता।</p>
+      <ul>
+        <li>हर बार आपको बताया जाता है।</li>
+        <li>अभी FREE है।</li>
+        <li>हम reveal की एक record रखते हैं — call की बातचीत नहीं।</li>
+        <li><strong>वही employer दोबारा नहीं देख सकता।</strong></li>
+        <li><strong>हम employer को नंबर भुलवा नहीं सकते।</strong> Section 6 में शिकायत का तरीक़ा देखें।</li>
+      </ul>
+      <p><strong>Supabase</strong> — हमारा database host करने वाली कंपनी।</p>
+      <p><strong>और कोई नहीं।</strong> हम डेटा बेचते नहीं।</p>
+    </section>
+
+    <section class="clause" id="p4"><h2>4. Location, ख़ास तौर पर</h2>
+      <ul>
+        <li><strong>काम स्वीकार करने से पहले</strong>, employer को सिर्फ़ एक मोटी distance band दिखती है — "2 km से कम दूर", "2–5 km दूर", "5–10 km दूर", या "10+ km दूर" — कभी सटीक आँकड़ा या सही जगह नहीं। सटीक आँकड़ा भी जगह बता सकता है, इसलिए band इस्तेमाल होता है।</li>
+        <li>काम की location workers को दिखती है। Employer का घर का पता तब तक नहीं, जब तक वे उसे काम की जगह न चुनें।</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="p5"><h2>5. हम कब तक रखते हैं</h2>
+      <p>जब तक account है, और उसके बाद कुछ समय तक — records के लिए।</p>
+      <div class="action"><strong>अपना account कभी भी Profile → Delete Account से, app में ही, delete करें।</strong> इससे profile, photos, location, jobs, applications, messages, ratings हमेशा के लिए मिट जाती हैं — तुरंत, बिना email किए। Undo नहीं हो सकता।</div>
+      <p><strong>क्या रखा जाता है:</strong> payment और contact-reveal records, नाम और पहचान हटाकर।</p>
+      <div class="callout">कितने समय रखा जाएगा, और क़ानून के तहत आगे क्या चाहिए — ये सवाल अभी खुले हैं, अंदाज़ा नहीं लगाएंगे।</div>
+      <p>Login नहीं कर पा रहे तो <strong>ravit96430@gmail.com</strong> पर email करें।</p>
+    </section>
+
+    <section class="clause" id="p6"><h2>6. आपके अधिकार</h2>
+      <ul>
+        <li><strong>डेटा देखें</strong> — profile screen पर।</li>
+        <li><strong>सुधारें</strong> — app में हर field बदली जा सकती है।</li>
+        <li><strong>Account हटाएं</strong> — Profile → Delete Account, app में, कभी भी। Login न कर पाएं तो email करें।</li>
+        <li><strong>Permissions बंद करें</strong> — location, camera, microphone।</li>
+        <li><strong>ग़लत इस्तेमाल की शिकायत करें</strong> — <strong>ravit96430@gmail.com</strong> पर।</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="p7"><h2>7. सुरक्षा</h2>
+      <p>Database ख़ुद वह डेटा देने से मना कर देता है जिसका हक़ नहीं है। Admin accounts के लिए password और दूसरा factor ज़रूरी है।</p>
+    </section>
+
+    <section class="clause" id="p8"><h2>8. बच्चे</h2>
+      <p>Connect Rozgar वयस्कों के लिए है। 18 से कम उम्र वालों के लिए नहीं।</p>
+    </section>
+
+    <section class="clause" id="p9"><h2>9. बदलाव</h2>
+      <p>अहम बदलाव पर हम app में नया version accept करने को कहेंगे।</p>
+    </section>
+
+    <section class="clause" id="p10"><h2>10. संपर्क</h2>
+      <p><strong>ravit96430@gmail.com</strong></p>
+    </section>
+  </div>
+
+  <footer class="page">Connect Rozgar</footer>
+</div>
+
+<script>
+  document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-lang-btn');
+      document.body.setAttribute('data-lang', lang);
+      document.querySelectorAll('[data-lang-btn]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      document.querySelectorAll('[data-pane]').forEach(function (el) { el.hidden = el.getAttribute('data-pane') !== lang; });
+      document.querySelectorAll('[data-en][data-hi]').forEach(function (el) { el.textContent = el.getAttribute('data-' + lang); });
+    });
+  });
+</script>
+</body>
+</html>

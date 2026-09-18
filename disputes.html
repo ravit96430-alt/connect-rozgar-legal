@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect Rozgar — Dispute Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --primary: #087DF5; --primary-dark: #0665C4; --primary-light: #EAF4FF;
+    --navy: #07336B; --text: #07336B; --text-secondary: #3C5A80; --text-muted: #7B93B0;
+    --background: #EAF4FF; --card: #FFFFFF; --border: #D6E8FB;
+    --warning: #F59E0B; --warning-light: #FEF3C7;
+    --gold: #F5A623;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--text); font-family: "Inter","Noto Sans Devanagari",system-ui,sans-serif; line-height: 1.65; }
+  body[data-lang="hi"] { font-family: "Noto Sans Devanagari","Inter",system-ui,sans-serif; line-height: 1.85; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 20px 72px; }
+
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0 18px; flex-wrap: wrap; position: sticky; top: 0; background: var(--background); z-index: 5; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark { width: 38px; height: 38px; border-radius: 10px; background: var(--primary); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .brand-name { font-weight: 800; font-size: 1.1rem; color: var(--navy); }
+  .langtoggle { display: flex; gap: 2px; background: #fff; border: 1.5px solid var(--border); border-radius: 999px; padding: 3px; }
+  .langtoggle button { border: none; background: none; padding: 6px 14px; border-radius: 999px; font-family: inherit; font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); cursor: pointer; }
+  .langtoggle button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+
+  nav.doclinks { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  nav.doclinks a { font-size: 0.85rem; font-weight: 700; padding: 8px 14px; border-radius: 999px; text-decoration: none; border: 1.5px solid var(--border); background: #fff; color: var(--text-secondary); }
+  nav.doclinks a[aria-current="page"] { background: var(--primary-light); border-color: var(--primary); color: var(--primary-dark); }
+
+  h1 { font-size: clamp(1.4rem, 5vw, 1.75rem); font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; color: var(--navy); }
+  .meta { font-size: 0.85rem; color: var(--text-muted); margin: 0 0 24px; line-height: 1.6; }
+  .meta b { color: var(--text-secondary); }
+
+  section.clause { padding-top: 22px; scroll-margin-top: 70px; }
+  section.clause + section.clause { border-top: 1px solid var(--border); }
+  h2 { font-size: 1.08rem; font-weight: 800; color: var(--navy); margin: 0 0 10px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--navy); }
+
+  .tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 380px; }
+  th { background: var(--primary-light); text-align: left; padding: 9px 12px; font-size: 0.78rem; color: var(--text-secondary); border-bottom: 1px solid var(--border); }
+  td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+  tr:last-child td { border-bottom: none; }
+
+  footer.page { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.8rem; }
+</style>
+</head>
+<body data-lang="en">
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand"><div class="brand-mark">CR</div><div class="brand-name">Connect Rozgar</div></div>
+    <div class="langtoggle" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true">English</button>
+      <button type="button" data-lang-btn="hi" aria-pressed="false">हिंदी</button>
+    </div>
+  </header>
+
+  <nav class="doclinks">
+    <a href="terms.html" data-en="Terms of Use" data-hi="उपयोग की शर्तें">Terms of Use</a>
+    <a href="privacy.html" data-en="Privacy Policy" data-hi="Privacy Policy">Privacy Policy</a>
+    <a href="payment.html" data-en="Payment Terms" data-hi="भुगतान की शर्तें">Payment Terms</a>
+    <a href="cancellation.html" data-en="Cancellation Policy" data-hi="Cancellation नीति">Cancellation Policy</a>
+    <a href="disputes.html" aria-current="page" data-en="Dispute Policy" data-hi="विवाद नीति">Dispute Policy</a>
+    <a href="delete-account.html" data-en="Delete Account" data-hi="Account Delete करें">Delete Account</a>
+  </nav>
+
+  <div data-pane="en">
+    <h1>Connect Rozgar — Dispute Policy</h1>
+    <p class="meta"><b>Version:</b> 0.1-draft &nbsp;·&nbsp; <b>Last updated:</b> 22 August 2026</p>
+  </div>
+  <div data-pane="hi" hidden>
+    <h1>Connect Rozgar — विवाद नीति</h1>
+    <p class="meta"><b>Version:</b> 0.1-draft &nbsp;·&nbsp; <b>अंतिम बदलाव:</b> 22 अगस्त 2026</p>
+  </div>
+
+  <div data-pane="en">
+    <section class="clause" id="d1"><h2>What we can and cannot do</h2>
+      <p>Connect Rozgar is a platform, not a court. We can:</p>
+      <ul><li>look at the record of what happened on the platform</li><li>hear both sides</li><li>act on accounts: warnings, restrictions, suspension</li><li>correct ratings that came from a job that did not happen</li><li>reverse a platform fee where the job did not happen</li></ul>
+      <p>We <strong>cannot</strong> force anyone to pay, order compensation, or decide who is legally right. For that, ordinary legal routes apply — and for smaller amounts, consumer forums or the police may be appropriate.</p>
+      <p>Being honest about this up front is better than implying a protection that does not exist.</p>
+    </section>
+    <section class="clause" id="d2"><h2>Raising a dispute</h2>
+      <p>Either side may raise one <strong>within 7 days</strong> of the job's scheduled end.</p>
+      <p>You will be asked for: what happened, what you want, and any evidence — photos, messages, or the job record itself.</p>
+    </section>
+    <section class="clause" id="d3"><h2>What happens next</h2>
+      <div class="tablewrap"><table><thead><tr><th>Stage</th><th>What it means</th></tr></thead><tbody>
+        <tr><td>OPEN</td><td>Received; the other side has been asked to respond</td></tr>
+        <tr><td>UNDER REVIEW</td><td>An administrator is looking at it</td></tr>
+        <tr><td>RESOLVED</td><td>A decision was reached and acted on</td></tr>
+        <tr><td>REJECTED</td><td>Not enough evidence, or outside what we can act on</td></tr>
+        <tr><td>CLOSED</td><td>Withdrawn, or settled between the parties</td></tr>
+      </tbody></table></div>
+      <p>We aim to respond within <strong>3 working days</strong>. Complicated cases take longer, and we will say so rather than go quiet.</p>
+    </section>
+    <section class="clause" id="d4"><h2>What we look at</h2>
+      <p>The job record (times, check-ins, status changes), messages sent through the app, evidence submitted, and each side's history. A first complaint against someone with a long clean record reads differently from the fifth in a month.</p>
+    </section>
+    <section class="clause" id="d5"><h2>Common cases</h2>
+      <p><strong>"The worker did not turn up."</strong> Checked against the job record. Confirmed no-shows are recorded against the worker.</p>
+      <p><strong>"The employer did not pay."</strong> Until online payment exists we cannot verify payment directly, so we rely on both accounts and on history. Confirmed non-payment is recorded and affects the employer's standing.</p>
+      <p><strong>"The work was not done properly."</strong> Usually a matter between the two of you. We can look at evidence and take rating or account action where a pattern emerges.</p>
+      <p><strong>"The job was not what was described."</strong> If confirmed, the worker is not penalised for leaving, and the listing may be removed.</p>
+    </section>
+    <section class="clause" id="d6"><h2>Fairness</h2>
+      <p>Both sides are heard before a decision. Decisions are recorded with a reason. Administrators cannot see the dispute queue unless their role permits it, and every action they take is logged.</p>
+      <p>If you think a decision was wrong, reply and ask for it to be looked at again.</p>
+    </section>
+  </div>
+
+  <div data-pane="hi" hidden>
+    <section class="clause" id="d1"><h2>हम क्या कर सकते हैं और क्या नहीं</h2>
+      <p>Connect Rozgar एक platform है, अदालत नहीं। हम कर सकते हैं:</p>
+      <ul><li>platform पर जो हुआ उसका record देखना</li><li>दोनों पक्षों की सुनना</li><li>account पर कार्रवाई: चेतावनी, रोक, suspension</li><li>ऐसी rating हटाना जो उस काम से आई हो जो हुआ ही नहीं</li><li>वह platform fee वापस करना जहाँ काम हुआ ही नहीं</li></ul>
+      <p>हम <strong>नहीं</strong> कर सकते: किसी को पैसे देने पर मजबूर करना, मुआवज़ा तय करना, या यह तय करना कि क़ानूनी रूप से कौन सही है। उसके लिए सामान्य क़ानूनी रास्ते हैं — और छोटी रकम के लिए उपभोक्ता फ़ोरम या पुलिस उपयुक्त हो सकते हैं।</p>
+      <p>यह पहले ही साफ़ कह देना बेहतर है, बजाय ऐसी सुरक्षा का भरोसा देने के जो है ही नहीं।</p>
+    </section>
+    <section class="clause" id="d2"><h2>विवाद कैसे उठाएं</h2>
+      <p>कोई भी पक्ष काम के तय अंत के <strong>7 दिन के अंदर</strong> विवाद उठा सकता है।</p>
+      <p>आपसे पूछा जाएगा: क्या हुआ, आप क्या चाहते हैं, और कोई सबूत — photos, संदेश, या काम का record.</p>
+    </section>
+    <section class="clause" id="d3"><h2>आगे क्या होता है</h2>
+      <div class="tablewrap"><table><thead><tr><th>चरण</th><th>मतलब</th></tr></thead><tbody>
+        <tr><td>OPEN</td><td>मिल गया; दूसरे पक्ष से जवाब माँगा गया</td></tr>
+        <tr><td>UNDER REVIEW</td><td>Admin देख रहे हैं</td></tr>
+        <tr><td>RESOLVED</td><td>फ़ैसला हुआ और लागू किया गया</td></tr>
+        <tr><td>REJECTED</td><td>पर्याप्त सबूत नहीं, या हमारे दायरे से बाहर</td></tr>
+        <tr><td>CLOSED</td><td>वापस लिया गया, या आपस में सुलझ गया</td></tr>
+      </tbody></table></div>
+      <p>हम <strong>3 कार्य दिवसों</strong> में जवाब देने की कोशिश करते हैं। पेचीदा मामलों में ज़्यादा समय लगता है, और हम चुप रहने के बजाय यह बता देंगे।</p>
+    </section>
+    <section class="clause" id="d4"><h2>हम क्या देखते हैं</h2>
+      <p>काम का record (समय, check-in, status बदलाव), app के अंदर भेजे गए संदेश, दिए गए सबूत, और दोनों का इतिहास। लंबे साफ़ record वाले किसी व्यक्ति के ख़िलाफ़ पहली शिकायत, और एक महीने में पाँचवीं शिकायत — दोनों अलग बात हैं।</p>
+    </section>
+    <section class="clause" id="d5"><h2>आम मामले</h2>
+      <p><strong>"Worker आया ही नहीं।"</strong> काम के record से मिलाया जाता है। पुष्टि होने पर no-show worker के record में दर्ज होता है।</p>
+      <p><strong>"Employer ने पैसे नहीं दिए।"</strong> जब तक online payment नहीं है, हम payment सीधे जाँच नहीं सकते, इसलिए दोनों के कहे और इतिहास पर निर्भर रहते हैं। पुष्टि होने पर यह दर्ज होता है और employer की साख पर असर पड़ता है।</p>
+      <p><strong>"काम ठीक से नहीं हुआ।"</strong> यह आमतौर पर आप दोनों के बीच की बात है। हम सबूत देख सकते हैं और pattern दिखने पर rating या account पर कार्रवाई कर सकते हैं।</p>
+      <p><strong>"काम वैसा नहीं था जैसा बताया गया।"</strong> पुष्टि होने पर worker पर छोड़ने का कोई असर नहीं पड़ता, और listing हटाई जा सकती है।</p>
+    </section>
+    <section class="clause" id="d6"><h2>निष्पक्षता</h2>
+      <p>फ़ैसले से पहले दोनों पक्षों को सुना जाता है। फ़ैसले कारण के साथ दर्ज होते हैं। Admin तब तक dispute की सूची नहीं देख सकते जब तक उनकी भूमिका इजाज़त न दे, और उनके हर क़दम का record रखा जाता है।</p>
+      <p>अगर आपको लगे कि फ़ैसला ग़लत था, जवाब देकर दोबारा देखने को कहें।</p>
+    </section>
+  </div>
+
+  <footer class="page">Connect Rozgar</footer>
+</div>
+
+<script>
+  document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-lang-btn');
+      document.body.setAttribute('data-lang', lang);
+      document.querySelectorAll('[data-lang-btn]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      document.querySelectorAll('[data-pane]').forEach(function (el) { el.hidden = el.getAttribute('data-pane') !== lang; });
+      document.querySelectorAll('[data-en][data-hi]').forEach(function (el) { el.textContent = el.getAttribute('data-' + lang); });
+    });
+  });
+</script>
+</body>
+</html>
